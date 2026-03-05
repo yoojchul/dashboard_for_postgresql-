@@ -1,5 +1,9 @@
 # Dashboard of transactions for PostgreSQL
 
+PostgreSQL 에서 실행한 모든 transaction의 TPS, service time 그리고 active한 연결 수는 시간별로 표시. 부가적으로 가장 오래 실행한 query도 표로 나옴. 
+
+
+
 ## 1. 시스템 업데이트 및 필수 패키지 설치
 ```
 sudo apt update && sudo apt upgrade -y
