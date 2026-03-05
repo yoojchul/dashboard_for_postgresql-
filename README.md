@@ -1,2 +1,3 @@
-# dashboard_for_postgresql-
-dashboard of transactions for PostgreSQL
+# dashboard of transactions for PostgreSQL
+
+
