@@ -2,7 +2,7 @@
 
 PostgreSQL 에서 실행한 모든 transaction의 TPS, service time 그리고 active한 연결 수는 시간별로 표시. 부가적으로 가장 오래 실행한 query도 표로 나옴. 
 
-
+!["dashboard"](dashboard_for_PostgreSQL.png)
 
 ## 1. 시스템 업데이트 및 필수 패키지 설치
 ```
@@ -51,4 +51,16 @@ sudo systemctl enable --now grafana-server
 python3 -m venv ~/monitor_env
 source ~/monitor_env/bin/activate
 pip install psycopg2-binary requests python-dotenv
+```
+
+## 6. 실행 방법
+```
+python3 dashboard.py
+# 실행하는 동안 정보를 취합해서 DB에 올림. 
+```
+
+## 7. 확인 
+```
+http://<IP>:3000  
+# grafana로 접속
 ```
