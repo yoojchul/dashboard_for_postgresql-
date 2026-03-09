@@ -55,6 +55,12 @@ pip install psycopg2-binary requests python-dotenv
 
 ## 6. 실행 방법
 ```
+cat .env
+DB_USER="postgres"
+DB_PASSWORD="password"
+GRAFANA_USER="admin"
+GRAFANA_PASS="password"
+
 python3 dashboard.py
 # 실행하는 동안 정보를 취합해서 DB에 올림. 
 ```
